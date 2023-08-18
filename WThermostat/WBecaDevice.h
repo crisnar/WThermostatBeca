@@ -35,7 +35,7 @@ const static char HTTP_CONFIG_SCHTAB_FOOT[]         PROGMEM = R"=====(
 const static char MQTT_HASS_AUTODISCOVERY_CLIMATE[]         PROGMEM = R"=====(
 {
 "name":"%s",
-"unique_id": "%s",
+"unique_id": "climate-%s",
 "dev":{"ids":["%s"],"name":"%s","mdl":"%s","sw":"%s","mf":"WThermostatBeca"},
 "~": "%s",
 "avty_t":"~/tele/LWT",
@@ -64,7 +64,7 @@ const static char MQTT_HASS_AUTODISCOVERY_CLIMATE[]         PROGMEM = R"=====(
 const static char MQTT_HASS_AUTODISCOVERY_AIRCO[]         PROGMEM = R"=====(
 {
 "name":"%s",
-"unique_id": "%s",
+"unique_id": "climate-%s",
 "dev":{"ids":["%s"],"name":"%s","mdl":"%s","sw":"%s","mf":"WThermostatBeca"},
 "~": "%s",
 "avty_t":"~/tele/LWT",
@@ -96,7 +96,7 @@ const static char MQTT_HASS_AUTODISCOVERY_AIRCO[]         PROGMEM = R"=====(
 const static char MQTT_HASS_AUTODISCOVERY_SENSOR[]         PROGMEM = R"=====(
 {
 "name":"%s Temperature",
-"unique_id":"%s",
+"unique_id":"climate-%s",
 "device_class":"temperature",
 "dev":{"ids":["%s"]},
 "~":"%s",
@@ -108,7 +108,7 @@ const static char MQTT_HASS_AUTODISCOVERY_SENSOR[]         PROGMEM = R"=====(
 const static char MQTT_HASS_AUTODISCOVERY_SENSORFLOOR[]         PROGMEM = R"=====(
 {
 "name":"%s Temperature Floor",
-"unique_id":"%s",
+"unique_id":"climate-%s",
 "device_class":"temperature",
 "dev":{"ids":["%s"]},
 "~":"%s",
@@ -120,7 +120,7 @@ const static char MQTT_HASS_AUTODISCOVERY_SENSORFLOOR[]         PROGMEM = R"====
 const static char MQTT_HASS_AUTODISCOVERY_SENSORRSSI[]         PROGMEM = R"=====(
 {
 "name":"%s WiFi RSSI",
-"unique_id":"%s",
+"unique_id":"climate-%s",
 "device_class":"signal_strength",
 "dev":{"ids":["%s"]},
 "~":"%s",
